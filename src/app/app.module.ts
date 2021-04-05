@@ -12,7 +12,7 @@ import { collectionReducer } from './state/collection.reducer';
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({books: reducer}, {collection: collectionReducer})
+    StoreModule.forRoot({books: reducer, collection: collectionReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]
