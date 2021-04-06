@@ -1,6 +1,6 @@
 import { Book } from "../book-list/book.model";
 
 export interface AppState {
-    books: ReadonlyArray<Book>;
+    books: Array<Book>;
     collection: ReadonlyArray<string>;
   }
