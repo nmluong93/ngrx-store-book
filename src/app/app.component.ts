@@ -14,7 +14,7 @@ import { selectBookCollection, selectBooks } from './state/books.selector';
 
 export class AppComponent {
   
-  books$ = this.store.pipe(select(selectBooks));
+  books$ = this.store.select(selectBooks);
   bookCollection$ = this.store.pipe(select(selectBookCollection));
 
   onAdd(bookId: string) {
